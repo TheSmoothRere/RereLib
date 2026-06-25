@@ -1,3 +1,6 @@
+import io.github.smootheez.LoaderType
+import io.github.smootheez.curseforge.EnvironmentType
+
 plugins {
     id("net.fabricmc.fabric-loom")
     id("io.github.smootheez.mc-mod-publisher")
@@ -20,6 +23,10 @@ val modLicense = prop("modLicense")
 val minecraftVersion = prop("minecraftVersion")
 val fabricApiVersion = prop("fabricApiVersion")
 val javaVersion = prop("javaVersion")
+
+val modReleaseType = prop("modReleaseType")
+val modrinthId = prop("modrinthId")
+val curseforgeId = prop("curseforgeId")
 
 val mcModVersion = "$modVersion+$minecraftVersion"
 version = mcModVersion
@@ -94,6 +101,27 @@ java {
 
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(javaVersion))
+    }
+}
+
+mcModPublisher {
+    displayName = "$modName $mcModVersion"
+    version = mcModVersion
+    releaseType = modReleaseType
+    changelog = rootProject.file("changelogs/v$mcModVersion.md").readText()
+    files.from(tasks.named("jar"))
+    gameVersions.addAll(listOf("26.1", "26.1.1", "26.1.2"))
+    loaders.addAll(listOf(LoaderType.FABRIC))
+
+    curseforge {
+        token = System.getenv("CURSEFORGE_TOKEN")
+        projectId = curseforgeId
+        environmentType = listOf(EnvironmentType.CLIENT)
+    }
+
+    modrinth {
+        token = System.getenv("MODRINTH_TOKEN")
+        projectId = modrinthId
     }
 }
 
