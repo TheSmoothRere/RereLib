@@ -5,7 +5,7 @@ plugins {
     id("net.fabricmc.fabric-loom")
     id("io.github.smootheez.mc-mod-publisher")
     `maven-publish`
-    signing
+//    signing
 }
 
 fun prop(name: String): String {
@@ -162,7 +162,7 @@ publishing {
         }
     }
 
-    repositories {
+    /*repositories {
         maven {
             name = "Sonatype"
             url = uri("https://central.sonatype.com/service/local/staging/deploy/maven2/")
@@ -171,13 +171,18 @@ publishing {
                 password = project.findProperty("sonatypePassword")?.toString()
             }
         }
-    }
+    }*/
 }
 
-signing {
-    // Only sign if we aren't in a dry-run local environment
-    val publishingTasks = gradle.startParameter.taskNames
-    if (publishingTasks.any { it.contains("publish") }) {
-        sign(publishing.publications["mavenJava"])
+/*signing {
+    val tasksToRun = gradle.startParameter.taskNames
+    if (tasksToRun.any { it.contains("publish") }) {
+        val pgpKey = System.getenv("SIGNING_KEY") ?: project.findProperty("signing.key")?.toString()
+        val pgpPassword = System.getenv("SIGNING_PASSWORD") ?: project.findProperty("signing.password")?.toString()
+
+        if (pgpKey != null && pgpPassword != null) {
+            useInMemoryPgpKeys(pgpKey, pgpPassword)
+            sign(publishing.publications["mavenJava"])
+        }
     }
-}
+}*/
