@@ -11,7 +11,7 @@ import java.util.Collection;
 public class ReLib implements ModInitializer {
     @Override
     public void onInitialize() {
-        Constants.LOGGER.info("Hello Fabric world!");
+        Constants.LOGGER.info("ReLib initialized!");
 
         Collection<ConfigApi> configs = FabricLoader.getInstance().getEntrypoints(Constants.MOD_ID, ConfigApi.class);
         configs.forEach(config -> {

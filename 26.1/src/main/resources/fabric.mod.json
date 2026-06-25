@@ -9,6 +9,11 @@
   "authors": [
     "TheSmoothRere"
   ],
+  "contact": {
+    "homepage":"https://github.com/TheSmoothRere/ReLib",
+    "source": "https://github.com/TheSmoothRere/ReLib",
+    "issue": "https://github.com/TheSmoothRere/ReLib/issues"
+  },
   "environment": "client",
   "entrypoints": {
     "main": [

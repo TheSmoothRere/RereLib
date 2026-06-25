@@ -8,6 +8,6 @@ import net.fabricmc.api.Environment;
 public class ReLibClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        Constants.LOGGER.info("Hello Fabric client world!");
+        Constants.LOGGER.info("ReLib client initialized!");
     }
 }
