@@ -1,7 +1,7 @@
-package io.github.thesmoothrere.rerelib.config.option;
+package io.github.thesmoothrere.relib.config.option;
 
-import io.github.thesmoothrere.rerelib.config.serializer.BooleanOptionSerializer;
-import io.github.thesmoothrere.rerelib.config.serializer.ConfigOptionSerializer;
+import io.github.thesmoothrere.relib.config.serializer.BooleanOptionSerializer;
+import io.github.thesmoothrere.relib.config.serializer.ConfigOptionSerializer;
 import org.jspecify.annotations.NonNull;
 
 public class BooleanOption extends ConfigOption<Boolean> {

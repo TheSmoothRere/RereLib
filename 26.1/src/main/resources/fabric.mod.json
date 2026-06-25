@@ -4,6 +4,7 @@
   "version": "${version}+${minecraftVersion}",
   "name": "${name}",
   "description": "${description}",
+  "icon": "assets/${id}/icon.png",
   "license": "${license}",
   "authors": [
     "TheSmoothRere"
@@ -11,10 +12,10 @@
   "environment": "client",
   "entrypoints": {
     "main": [
-      "io.github.thesmoothrere.rerelib.RereLib"
+      "io.github.thesmoothrere.relib.ReLib"
     ],
     "client": [
-      "io.github.thesmoothrere.rerelib.RereLibClient"
+      "io.github.thesmoothrere.relib.ReLibClient"
     ]
   },
   "depends": {

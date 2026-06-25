@@ -1,8 +1,8 @@
-package io.github.thesmoothrere.rerelib.config;
+package io.github.thesmoothrere.relib.config;
 
-import io.github.thesmoothrere.rerelib.Constants;
-import io.github.thesmoothrere.rerelib.api.ConfigApi;
-import io.github.thesmoothrere.rerelib.config.option.ConfigOption;
+import io.github.thesmoothrere.relib.Constants;
+import io.github.thesmoothrere.relib.api.ConfigApi;
+import io.github.thesmoothrere.relib.config.option.ConfigOption;
 import org.jspecify.annotations.NonNull;
 
 import java.util.Arrays;

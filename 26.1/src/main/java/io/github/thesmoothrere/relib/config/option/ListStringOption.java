@@ -1,8 +1,8 @@
-package io.github.thesmoothrere.rerelib.config.option;
+package io.github.thesmoothrere.relib.config.option;
 
-import io.github.thesmoothrere.rerelib.config.ListString;
-import io.github.thesmoothrere.rerelib.config.serializer.ConfigOptionSerializer;
-import io.github.thesmoothrere.rerelib.config.serializer.ListStringOptionSerializer;
+import io.github.thesmoothrere.relib.config.ListString;
+import io.github.thesmoothrere.relib.config.serializer.ConfigOptionSerializer;
+import io.github.thesmoothrere.relib.config.serializer.ListStringOptionSerializer;
 import org.jspecify.annotations.NonNull;
 
 public class ListStringOption extends ConfigOption<ListString> {

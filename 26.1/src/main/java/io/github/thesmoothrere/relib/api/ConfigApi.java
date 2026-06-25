@@ -1,4 +1,4 @@
-package io.github.thesmoothrere.rerelib.api;
+package io.github.thesmoothrere.relib.api;
 
 public interface ConfigApi {
     default String getConfigName() {

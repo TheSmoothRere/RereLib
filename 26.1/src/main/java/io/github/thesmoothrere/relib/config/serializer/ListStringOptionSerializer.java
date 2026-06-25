@@ -1,9 +1,9 @@
-package io.github.thesmoothrere.rerelib.config.serializer;
+package io.github.thesmoothrere.relib.config.serializer;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
-import io.github.thesmoothrere.rerelib.config.ListString;
+import io.github.thesmoothrere.relib.config.ListString;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.github.thesmoothrere.rerelib.config.option;
+package io.github.thesmoothrere.relib.config.option;
 
 import org.jspecify.annotations.NonNull;
 

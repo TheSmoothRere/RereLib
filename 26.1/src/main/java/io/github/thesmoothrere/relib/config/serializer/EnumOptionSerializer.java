@@ -1,4 +1,4 @@
-package io.github.thesmoothrere.rerelib.config.serializer;
+package io.github.thesmoothrere.relib.config.serializer;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;

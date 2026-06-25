@@ -1,7 +1,7 @@
-package io.github.thesmoothrere.rerelib.config.option;
+package io.github.thesmoothrere.relib.config.option;
 
-import io.github.thesmoothrere.rerelib.config.serializer.ConfigOptionSerializer;
-import io.github.thesmoothrere.rerelib.config.serializer.EnumOptionSerializer;
+import io.github.thesmoothrere.relib.config.serializer.ConfigOptionSerializer;
+import io.github.thesmoothrere.relib.config.serializer.EnumOptionSerializer;
 import org.jspecify.annotations.NonNull;
 
 public class EnumOption<E extends Enum<E>> extends ConfigOption<E> {

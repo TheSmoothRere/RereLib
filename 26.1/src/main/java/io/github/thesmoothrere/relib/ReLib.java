@@ -1,14 +1,14 @@
-package io.github.thesmoothrere.rerelib;
+package io.github.thesmoothrere.relib;
 
-import io.github.thesmoothrere.rerelib.api.Config;
-import io.github.thesmoothrere.rerelib.api.ConfigApi;
-import io.github.thesmoothrere.rerelib.config.ConfigManager;
+import io.github.thesmoothrere.relib.api.Config;
+import io.github.thesmoothrere.relib.api.ConfigApi;
+import io.github.thesmoothrere.relib.config.ConfigManager;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.util.Collection;
 
-public class RereLib implements ModInitializer {
+public class ReLib implements ModInitializer {
     @Override
     public void onInitialize() {
         Constants.LOGGER.info("Hello Fabric world!");

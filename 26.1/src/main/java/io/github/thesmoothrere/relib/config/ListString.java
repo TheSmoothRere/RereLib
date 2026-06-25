@@ -1,4 +1,4 @@
-package io.github.thesmoothrere.rerelib.config;
+package io.github.thesmoothrere.relib.config;
 
 import java.util.ArrayList;
 import java.util.List;

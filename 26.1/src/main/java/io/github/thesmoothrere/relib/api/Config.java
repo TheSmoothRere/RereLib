@@ -1,4 +1,4 @@
-package io.github.thesmoothrere.rerelib.api;
+package io.github.thesmoothrere.relib.api;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,8 +1,8 @@
-package io.github.thesmoothrere.rerelib.config;
+package io.github.thesmoothrere.relib.config;
 
 import com.google.gson.*;
-import io.github.thesmoothrere.rerelib.Constants;
-import io.github.thesmoothrere.rerelib.config.option.ConfigOption;
+import io.github.thesmoothrere.relib.Constants;
+import io.github.thesmoothrere.relib.config.option.ConfigOption;
 import net.fabricmc.loader.api.FabricLoader;
 import org.jspecify.annotations.NonNull;
 
