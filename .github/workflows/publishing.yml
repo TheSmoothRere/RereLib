@@ -41,6 +41,10 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
 
+      - name: Build submodule jar
+        run: |
+          ./gradlew :${{ steps.parse_tag.outputs.mc_version }}:build
+
       - name: Run Mod Publisher
         run: |
           ./gradlew :${{ steps.parse_tag.outputs.mc_version }}:publishModToAll
